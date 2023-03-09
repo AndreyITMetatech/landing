@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.page-grey {
+.page__grey {
     width: 1579px;
     background-color: #F6F2F2;
     display: flex;
@@ -31,7 +31,7 @@
     margin-top: 29px;
 }
 
-.header-navigation {
+.header__navigation {
     display: flex;
     flex-wrap: wrap;
 }
@@ -45,18 +45,18 @@
     margin: 0;
 }
 
-.menu-item {
+.menu__item {
     display: flex;
     align-items: stretch;
     justify-content: center;
     min-height: 90px;
 }
 
-.menu-item:hover {
+.menu__item:hover {
     background-color: #FF3F40;
 }
 
-.menu-link {
+.menu__link {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -70,7 +70,7 @@
 
 /* Intro */
 
-.page-content {
+.page__content {
     flex-grow: 1;
 }
 
@@ -79,7 +79,7 @@
     padding-bottom: 94px;
 }
 
-.intro-content {
+.intro__content {
     position: relative;
     bottom: 12px;
     width: 616px;
@@ -87,7 +87,7 @@
     margin-right: 74px;
 }
 
-.intro-heading {
+.intro__heading {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 60px;
@@ -98,7 +98,7 @@
     margin-top: 60px;
 }
 
-.intro-text {
+.intro__text {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 15.9953px;
     margin: 0;
@@ -114,7 +114,7 @@
 
 }
 
-.action-button {
+.action__button {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     display: inline-block;
@@ -127,14 +127,14 @@
 
 }
 
-.button-red {
+.button__red {
     font-size: 18px;
     font-weight: 700;
     color: #FFFFFF;
     background-color: #FF2D2D;
 }
 
-.intro-image {
+.intro__image {
     width: 551px;
     height: 356px;
     background: #FF2222;
@@ -156,7 +156,7 @@
 
 }
 
-.intro-section {
+.intro__section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
