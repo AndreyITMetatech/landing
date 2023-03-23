@@ -455,6 +455,7 @@
 }
 
 .team__selected-about {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
     margin-bottom: 34px;
