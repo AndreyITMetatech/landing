@@ -437,6 +437,7 @@
         grid-template-columns: repeat(2. auto);
         grid-template-rows: repeat(2, auto);
     }
+
     .team__main-content {
         display: contents;
     }
@@ -490,6 +491,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 .member {
@@ -518,8 +520,8 @@
     opacity: 0.5;
 }
 
-.member:hover > .member__name {
-    visibility: visible;    
+.member:hover>.member__name {
+    visibility: visible;
 }
 
 .member__photo {
@@ -527,4 +529,89 @@
     width: 190px;
     height: 216px;
     background-color: gray;
+}
+
+/* Subscribe */
+
+.subscribe {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #2D2D2D;
+    padding-top: 124px;
+    padding-bottom: 140px;
+    margin-bottom: 100px;
+    margin-right: 162px;
+    max-width: 1579px;
+}
+
+.subscribe__header {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe__text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.subscribe__heading {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    line-height: 24px;
+    letter-spacing: 1;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.subscribe__input {
+    color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    flex: 0 1 524px;
+    min-height: 82px;
+    padding: 0;
+    padding-right: 22px;
+    padding-left: 36px;
+    border: none;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.subscribe__button {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    width: 218px;
+    min-height: 82px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF2D2D;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 56px;
+}
+
+.subscribe__button:hover {
+    color: #ffffff;
+    background-color: #da1717;
 }
