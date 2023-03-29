@@ -664,6 +664,7 @@
 }
 
 .feedback__text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
     max-width: 750px;
