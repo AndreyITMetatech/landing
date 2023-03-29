@@ -642,7 +642,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 92px;
+
     padding-bottom: 110px;
 }
 
@@ -771,7 +771,7 @@
     position: relative;
     background-color: #2D2D2D;
     color: #FFFFFF;
-    padding: 126px 52px 126px 78px;
+    padding: 126px 52px 26px 78px;
     min-width: 588px;
     min-height: 488px;
 }
