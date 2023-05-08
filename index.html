@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="icon" href="https://itmetatech.ru/favicon.ico" type="image/x-icon">
     <title>Лендинг проект</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -13,8 +14,9 @@
 </head>
 
 <body class="page">
+
     <div class="page__header page__header__grey">
-        <header class="header open">
+        <header class="header">
             <button class="header__burger-btn" id="burger">
                 <span></span><span></span><span></span>
             </button>
@@ -36,6 +38,7 @@
             </nav>
         </header>
     </div>
+
     <main class="page__content">
         <div class="page__intro page__header__grey">
             <section class="intro section">
@@ -47,7 +50,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
                         incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
                     </p>
-                    <a class="action-button action__button_red" href="#">
+                    <a class="action-button action__button_red" href="https://t.me/itmetatech" target="_blank">
                         Contact Us
                     </a>
                 </div>
@@ -57,17 +60,19 @@
                 </a>
             </section>
         </div>
+
         <section class="section services">
             <div class="services__lead">
-                <h2 class="services__heading section__heading">
+                <h2 class="services__heading section-heading">
                     do you know we can provide for you ?
                 </h2>
-                <p class="service__text">
+                <p class="services__text">
                     Lorem ipsum dolor sit amet, consectetur adipis cing elit,
                     sed do eiusmod tempor incididunt ut labore et. Lorem ni ipsum dolor sit amet,
                     consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
                 </p>
-                <a class="action__button2 button__white" href="#">Learn More</a>
+                <a class="action__button2 button__white" href="https://t.me/itmetatech" target="_blank">Задать
+                    вопрос</a>
             </div>
             <div class="services__blocks">
                 <section class="service">
@@ -113,42 +118,51 @@
             </div>
             <ul class="products__filter">
                 <li class="products__item">
-                    <a class="products__link products__link_active" href="#">
+                    <a class="products__link products__link_active" href="#portfolio">
                         All
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link" href="#">
+                    <a class="products__link" href="#portfolio">
                         print template
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link" href="#">
+                    <a class="products__link" href="#portfolio">
                         web template
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link" href="#">
+                    <a class="products__link" href="#portfolio">
                         user interface
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link" href="#">
+                    <a class="products__link" href="#portfolio">
                         mock-up
                     </a>
                 </li>
             </ul>
             <div class="products">
-                <img class="product" src="./images/work-1.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-2.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-3.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-4.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-5.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-6.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-7.jpg" alt="Скриншот макет">
-                <img class="product" src="./images/work-8.jpg" alt="Скриншот макет">
+                <a href="https://bms31.ru/" target="_blank"><img class="product" src="./images/work-1.jpg"
+                        alt="Сайт компании БЕЛГОРОДМЕТАЛЛОСНАБ"></a>
+                <a href="https://constantamebell.ru/" target="_blank"><img class="product" src="./images/work-2.jpg"
+                        alt="Сайт компании CONSTANTA"></a>
+                <a href="https://idealbag31.ru/" target="_blank"><img class="product" src="./images/work-3.jpg"
+                        alt="Сайт компании IDEALBAG"></a>
+                <a href="https://interpromopt.ru/" target="_blank"><img class="product" src="./images/work-4.jpg"
+                        alt="Сайт компании ИНТЕРПРОМОПТ"></a>
+                <a href="https://julawfirm.ru/" target="_blank"><img class="product" src="./images/work-5.jpg"
+                        alt="Сайт компании Юридическая фирма Юлия"></a>
+                <a href="https://rozavoznesenovka31.ru/" target="_blank"><img class="product" src="./images/work-6.jpg"
+                        alt="Сайт компании Вознесеновский Питомник Роз 31"></a>
+                <a href="https://sushi-oskol.ru/" target="_blank"><img class="product" src="./images/work-7.jpg"
+                        alt="Сайт компании Суши Оскол"></a>
+                <a href="https://pelmenapparat.com/" target="_blank"><img class="product" src="./images/work-8.jpg"
+                        alt="Сайт компании ПИЩЕВЫЕ РЕШЕНИЯ"></a>
             </div>
         </section>
+
         <section class="section team" id="about">
             <div class="team__header">
                 <h2 class="team__heading section-heading" id="about">
@@ -162,15 +176,16 @@
                 <img class="team__selected-photo" src="./images/01_team.png" alt="Фото сотрудника">
                 <div class="team__main-content">
                     <div class="team__selected-info">
-                        <span class="team__selected-name">mark waugh</span>
+                        <span class="team__selected-name">Андрей Бытко</span>
                         <p class="team__selected-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit,
                             sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
                         </p>
                         <div class="team__selected-links">
-                            <a class="team__selected-link" href="#">Facebook</a>
-                            <a class="team__selected-link" href="#">Dribble</a>
-                            <a class="team__selected-link" href="#">Behance</a>
-                            <a class="team__selected-link" href="#">Twitter</a>
+                            <a class="team__selected-link" href="https://www.facebook.com/itmetatech"
+                                target="_blank">Facebook</a>
+                            <a class="team__selected-link" href="https://dribbble.com/" target="_blank">Dribble</a>
+                            <a class="team__selected-link" href="https://www.behance.net/" target="_blank">Behance</a>
+                            <a class="team__selected-link" href="https://twitter.com/" target="_blank">Twitter</a>
                         </div>
                     </div>
                     <section class="members">
@@ -244,25 +259,27 @@
             </section>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer__cont section">
             <p class="footer__copy">&copy; Copyright @Junaed 2016, All rights reserved.</p>
             <div class="footer__media">
-                <a class="footer__link" href="https://twitter.com/" target="_blank">
+                <a class="footer__links" href="https://twitter.com/" target="_blank">
                     <img src="./images/Twitter_Rounded_Solid.png" alt="логотип твиттера">
                 </a>
-                <a class="footer__link" href="https://ru.linkedin.com/" target="_blank">
+                <a class="footer__links" href="https://ru.linkedin.com/" target="_blank">
                     <img src="./images/LinkedIn_Rounded_Solid.png" alt="логотип линкедина">
                 </a>
-                <a class="footer__link" href="https://plus.google.com/" target="_blank">
+                <a class="footer__links" href="https://plus.google.com/" target="_blank">
                     <img src="./images/Google_Rounded_Solid.png" alt="логотип гугл плюс">
                 </a>
-                <a class="footer__link" href="https://ru-ru.facebook.com/" target="_blank">
+                <a class="footer__links" href="https://ru-ru.facebook.com/" target="_blank">
                     <img src="./images/Facebook_Rounded_Solid.png" alt="логотип фейсбука">
                 </a>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
