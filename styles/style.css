@@ -170,18 +170,6 @@
     margin-left: 50px;
 }
 
-@keyframes showLeft {
-
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: 0;
-    }
-
-}
-
 .intro__heading {
     font-size: 60px;
     line-height: 72px;
@@ -230,18 +218,6 @@
     margin-top: 65px;
     margin-right: 50px;
     min-width: 350px;
-}
-
-@keyframes showRight {
-
-    from {
-        right: -100%;
-    }
-
-    to {
-        right: 0;
-    }
-
 }
 
 .section {
@@ -523,18 +499,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-@supports (display: grid) and (display: contents) {
-    .team__members {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, auto);
-    }
-
-    .team__main-content {
-        display: contents;
-    }
 }
 
 .team__selected-info {
@@ -935,206 +899,192 @@
     .subscribe__heading {
         font-size: 36px;
     }
+}
 
-    @media (max-width: 836px) {
-        .subscribe__heading {
-            font-size: 22px;
-        }
-
-        .subscribe__input {
-            flex: 0 1 382px;
-            min-height: 68px;
-        }
-
-        .subscribe__btn {
-            flex: 0 1 218px;
-            min-height: 68px;
-        }
-
-        @media (max-width: 814px) {
-            .team__selected-info {
-                display: grid;
-                grid-column: 1 / 3;
-                grid-row: 3 / 5;
-            }
-
-            .members {
-                display: grid;
-                grid-column: 1 / 2;
-                grid-row: 5 / 6;
-            }
-
-            .member__photo {
-                width: 50%;
-                height: 218px;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .products__filter {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .products__item {
-                padding-top: 15px;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .header__burger-btn {
-                display: block;
-            }
-
-            .header__nav {
-                position: absolute;
-                left: -178px;
-                top: 0;
-                width: 134px;
-                background-color: #000000;
-                padding: 74px 20px 20px 20px;
-                transition: transform .5s;
-            }
-
-            .menu {
-                display: block;
-            }
-
-            .menu__link {
-                display: block;
-                color: #F6F2F2;
-                padding: 36px 28px
-            }
-
-            .header.open .header__nav {
-                transform: translateX(100%);
-            }
-        }
-
-        @media (max-width: 593px) {
-            .intro__heading {
-                font-size: 40px;
-                margin: 0;
-                padding: 0;
-            }
-
-            .intro__text {
-                font-size: 15px;
-            }
-
-            .action-button {
-                width: 168px
-            }
-        }
-
-        @media (max-width: 350px) {
-            .intro__heading {
-                font-size: 30px;
-                margin: 0;
-                padding: 0;
-            }
-
-            .services__heading {
-                font-size: 30px;
-                margin-top: -30px;
-                margin-left: -20px;
-                padding: 0;
-            }
-
-            .services__text {
-                font-size: 16px;
-                margin-left: -20px;
-                padding: 0;                
-            }
-
-            .service {
-                font-size: 16px;
-                padding: 10px;   
-            }
-
-            .contacts {
-                max-width: 350px;
-                margin-left: -100px;
-            }
-
-            .feature__heading {
-                font-size: 30px;
-            }
-
-            .feature__text {
-                font-size: 12px;
-            }
-
-            .team__heading {
-                font-size: 30px;
-            }
-
-            .team__text {
-                font-size: 12px;
-            }
-
-            .team__selected-text {
-                font-size: 12px;
-            }
-
-            .subscribe__input {
-                flex: 0 1 342px;
-                min-height: 62px
-            }
-
-            .subscribe__btn {
-                flex: 0 1 204px;
-                min-height: 56px;
-            }
-
-            .feedback__heading {
-                font-size: 30px;
-            }
-
-            .feedback__text {
-                font-size: 12px;
-            }
-
-            .feedback__input {
-                margin-top: 14px;
-            }
-
-            .feedback-contacts {
-                padding-left: 10px;
-            }
-
-            .contacts-heading {
-                font-size: 30px;
-            }
-
-            .footer__copy {
-                margin-bottom: 24px;
-                padding-left: 50px;
-            }
-
-            .footer__media {
-                padding-left: 50px;
-                padding-left: 118px
-            }
-
-            .header__burger-btn {
-                position: relative;
-                right: 166px;
-            }
-
-        }
+@media (max-width: 836px) {
+    .subscribe__heading {
+        font-size: 22px;
     }
 
-       @media (max-width: 350px) {
-        .header__burger-btn {
-            position: relative;
-            right: 138px;
-        }
+    .subscribe__input {
+        flex: 0 1 382px;
+        min-height: 68px;
+    }
 
-        .team__selected-link {
-            padding: 14px;
-            margin: 0;
-        }
+    .subscribe__btn {
+        flex: 0 1 218px;
+        min-height: 68px;
+    }
+}
+
+@media (max-width: 814px) {
+    .team__selected-info {
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+    }
+
+    .members {
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .member__photo {
+        width: 50%;
+        height: 218px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header__burger-btn {
+        display: block;
+    }
+
+    .header__nav {
+        position: absolute;
+        left: -178px;
+        top: 0;
+        width: 134px;
+        background-color: #000000;
+        padding: 74px 20px 20px 20px;
+        transition: transform .5s;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu__link {
+        display: block;
+        color: #F6F2F2;
+        padding: 36px 28px
+    }
+
+    .header.open .header__nav {
+        transform: translateX(100%);
+    }
+
+    .intro__heading {
+        margin: 0;
+    }
+
+    .products__filter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .products__item {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .intro__heading {
+        font-size: 30px;
+    }
+
+    .intro__content {
+        margin-top: -40px;
+        padding: 0;
+    }
+
+    .services__heading {
+        font-size: 30px;
+        margin-top: -30px;
+        margin-left: -20px;
+        padding: 0;
+    }
+
+    .services__text {
+        margin-left: -30px;
+        width: 350px;
+    }
+
+    .action__button2 {
+        margin: 0;
+    }
+
+    .service {
+        padding: 10px;
+    }
+
+    .contacts {
+        max-width: 350px;
+        margin-left: -100px;
+    }
+
+    .feature__heading {
+        font-size: 30px;
+    }
+
+    .feature__text {
+        font-size: 12px;
+    }
+
+    .team__heading {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .team__selected-name {
+        margin-top: 30px;
+    }
+
+    .subscribe__input {
+        flex: 0 1 342px;
+        min-height: 62px
+    }
+
+    .subscribe__btn {
+        flex: 0 1 204px;
+        min-height: 56px;
+    }
+
+    .feedback__heading {
+        font-size: 30px;
+        width: 350px;
+    }
+
+    .section-heading {
+        width: 350px;
+    }
+
+    .team__selected-links {
+        width: 350px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 350px;
+    }
+
+    .feedback__btn {
+        width: 350px;
+    }
+
+    .feedback-contacts {
+        padding-left: 10px;
+    }
+
+    .contacts-heading {
+        font-size: 30px;
+        width: 350px;
+    }
+
+    .footer__copy {
+        margin-bottom: 24px;
+        padding-left: 50px;
+    }
+
+    .footer__media {
+        padding-left: 50px;
+        padding-left: 118px
+    }
+
+    .header__burger-btn {
+        position: relative;
+        right: 138px;
     }
 }
