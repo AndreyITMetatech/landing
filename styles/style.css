@@ -438,13 +438,12 @@
 
 .team__selected-links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    min-width: 350px;
 }
 
 .team__header {
     width: 100%;
-    min-width: 350px;
     text-align: left;
     margin-bottom: 66px;
 }
@@ -455,7 +454,6 @@
     font-weight: 700;
     font-size: 42px;
     margin-bottom: 24px;
-    min-width: 350px;
 }
 
 .team__text {
@@ -466,7 +464,6 @@
     line-height: 28px;
     max-width: 460px;
     margin-bottom: 30px;
-    min-width: 350px;
 }
 
 .team__line {
@@ -509,8 +506,8 @@
     align-self: start;
     justify-content: space-between;
     max-width: 662px;
-    grid-column: 2 /3;
-    grid-row: 1 /2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .team__selected-text {
@@ -521,7 +518,6 @@
     margin: 0;
     line-height: 28px;
     margin-bottom: 34px;
-    min-width: 350px;
 }
 
 .team__selected-name {
@@ -553,7 +549,6 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     cursor: pointer;
-    min-width: 350px;
 }
 
 .member {
@@ -584,7 +579,6 @@
 }
 
 .member__photo {
-    width: 100%;
     height: 217px;
 }
 
@@ -694,7 +688,6 @@
     margin-left: 50px;
     padding-top: 92px;
     padding-bottom: 110px;
-    min-width: 350px;
 }
 
 .feedback-contacts::after {
@@ -706,7 +699,6 @@
 
 .feedback__header {
     margin-bottom: 34px;
-    min-width: 350px;
 }
 
 .feedback__heading {
@@ -722,7 +714,6 @@
     margin: 0;
     line-height: 28px;
     max-width: 750px;
-    min-width: 350px;
     margin-bottom: 46px;
 }
 
@@ -740,7 +731,6 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 730px;
-    min-width: 350px;
     margin-right: 106px;
     padding-left: 0;
     padding-right: 0;
@@ -750,7 +740,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 350px;
 }
 
 .feedback__input {
@@ -761,7 +750,6 @@
     border: none;
     background-color: #f3f3f3;
     border-radius: 5px;
-    min-width: 350px;
 }
 
 .feedback__name,
@@ -780,7 +768,6 @@
     font-size: 16px;
     width: 100%;
     max-width: 734px;
-    min-width: 350px;
     height: 252px;
     box-sizing: border-box;
     border: none;
@@ -797,7 +784,6 @@
     justify-content: center;
     width: 100%;
     max-width: 732px;
-    min-width: 350px;
     height: 74px;
     color: #FFFFFF;
     font-size: 18px;
@@ -808,17 +794,15 @@
     cursor: pointer;
 }
 
-/* contacts */
+/* Contacts */
 
 .contacts {
     box-sizing: border-box;
     position: relative;
     background-color: #2D2D2D;
     padding: 126px 52px 126px 78px;
-    width: 100%;
     max-width: 580px;
     min-height: 486px;
-    min-width: 350px;
     color: #FFFFFF;
     border-radius: 5px;
 }
@@ -828,7 +812,6 @@
     font-size: 42px;
     line-height: 34px;
     text-transform: uppercase;
-    min-width: 350px;
 }
 
 .contacts__address {
@@ -840,12 +823,11 @@
     margin-bottom: 28px;
 }
 
-/* footer */
+/* Footer */
 
 .footer {
     background-color: #2D2D2D;
     padding: 24px 1vw;
-    min-width: 350px;
 }
 
 .footer__cont {
@@ -927,13 +909,25 @@
 
     .members {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
         grid-column: 1 / 2;
         grid-row: 5 / 6;
     }
 
     .member__photo {
-        width: 50%;
         height: 218px;
+    }
+}
+
+@media (max-width: 810px) {
+    .products__filter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .products__item {
+        padding-top: 15px;
     }
 }
 
@@ -950,6 +944,7 @@
         background-color: #000000;
         padding: 74px 20px 20px 20px;
         transition: transform .5s;
+        z-index: 2;
     }
 
     .menu {
@@ -981,6 +976,176 @@
     }
 }
 
+@media (max-width: 593px) {
+    .intro__heading {
+        font-size: 40px;
+    }
+
+    .intro__text {
+        font-size: 15px;
+    }
+
+    .action-button {
+        width: 168px
+    }
+}
+
+@media (max-width: 450px) {
+    .intro__heading {
+        font-size: 30px;
+    }
+
+    .intro__text {
+        font-size: 12px;
+    }
+
+    .services__heading {
+        font-size: 30px;
+    }
+
+    .services__text {
+        font-size: 12px;
+    }
+
+    .feature__heading {
+        font-size: 30px;
+    }
+
+    .feature__text {
+        font-size: 12px;
+    }
+
+    .team__heading {
+        font-size: 30px;
+    }
+
+    .team__text {
+        font-size: 12px;
+    }
+
+    .team__selected-text {
+        font-size: 12px;
+    }
+
+    .subscribe__input {
+        flex: 0 1 342px;
+        min-height: 62px
+    }
+
+    .subscribe__btn {
+        flex: 0 1 204px;
+        min-height: 56px;
+    }
+
+    .feedback__heading {
+        font-size: 30px;
+    }
+
+    .feedback__text {
+        font-size: 12px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+    }
+
+    .feedback-contacts {
+        padding-left: 10px;
+    }
+
+    .contacts-heading {
+        font-size: 30px;
+    }
+
+    .footer__copy {
+        margin-bottom: 24px;
+        padding-left: 50px;
+    }
+
+    .footer__media {
+        padding-left: 50px;
+        padding-left: 118px
+    }
+
+    .header__burger-btn {
+        position: relative;
+        right: 166px;
+    }
+}
+
+@media (max-width: 415px) {
+    .header__burger-btn {
+        position: relative;
+        right: 138px;
+    }
+
+    .team__selected-link {
+        padding: 14px;
+        margin: 0;
+    }
+
+    .feedback {
+        padding-right: 28px;
+    }
+
+    .feedback__message {
+        resize: none;
+        font-size: 16px;
+        width: 100%;
+        max-width: 338px;
+        height: 252px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        background-color: #f3f3f3;
+        margin-bottom: 44px;
+        margin-top: 44px;
+        padding: 22px;
+    }
+
+    .feedback__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 312px;
+        height: 54px;
+        color: #FFFFFF;
+        font-size: 18px;
+        background-color: #FF3B3B;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .feedback__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .contacts-heading {
+        font-size: 24px;
+    }
+
+    .footer__media {
+        padding-left: 68px;
+    }
+
+    .contacts {
+        margin-top: 20px;
+        margin-right: 25px
+    }
+
+    .team__selected-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 350px) {
     .intro__heading {
         font-size: 30px;
@@ -998,11 +1163,6 @@
         padding: 0;
     }
 
-    .services__text {
-        margin-left: -30px;
-        width: 350px;
-    }
-
     .action__button2 {
         margin: 0;
     }
@@ -1012,8 +1172,8 @@
     }
 
     .contacts {
-        max-width: 350px;
-        margin-left: -100px;
+        margin-top: 20px;
+        margin-right: 25px;
     }
 
     .feature__heading {
@@ -1027,10 +1187,22 @@
     .team__heading {
         font-size: 30px;
         margin: 0;
+        margin-bottom: 20px;
     }
 
     .team__selected-name {
         margin-top: 30px;
+    }
+
+    .team__selected-text {
+        margin-right: 10px;
+    }
+
+    .team__selected-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .subscribe__input {
@@ -1045,23 +1217,30 @@
 
     .feedback__heading {
         font-size: 30px;
-        width: 350px;
+        margin-left: 60px;
     }
 
-    .section-heading {
-        width: 350px;
+    .feedback__text {
+        margin-right: 80px;
+        margin-left: 60px;
     }
 
-    .team__selected-links {
-        width: 350px;
+    .feedback {
+        padding-right: 28px;
+    }
+
+    .feedback__line {
+        margin-left: 60px;
+    }
+
+    .feedback__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .feedback__input {
         margin-top: 14px;
-        width: 350px;
-    }
-
-    .feedback__btn {
         width: 350px;
     }
 
@@ -1070,8 +1249,7 @@
     }
 
     .contacts-heading {
-        font-size: 30px;
-        width: 350px;
+        font-size: 24px;
     }
 
     .footer__copy {
@@ -1080,8 +1258,7 @@
     }
 
     .footer__media {
-        padding-left: 50px;
-        padding-left: 118px
+        padding-left: 68px;
     }
 
     .header__burger-btn {
