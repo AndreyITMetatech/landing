@@ -50,6 +50,7 @@
 
 .page__header__grey {
     background-color: #F6F2F2;
+    z-index: 1;
 }
 
 /* Header */
