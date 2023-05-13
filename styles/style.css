@@ -874,6 +874,11 @@
     .contacts {
         margin-top: 20px;
     }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
+    }
 }
 
 @media (max-width: 1183px) {
@@ -881,11 +886,21 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
+    }
 }
 
 @media (max-width: 1010px) {
     .subscribe__heading {
         font-size: 36px;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 }
 
@@ -901,6 +916,11 @@
 
     .intro__heading {
         font-size: 40px;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .subscribe__input {
@@ -922,17 +942,29 @@
     .feedback {
         margin: 0;
         padding: 0;
+        width: 836px;
     }
 
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 836px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 836px;
     }
 }
 
 @media (max-width: 814px) {
     .services__text {
         font-size: 16px;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .intro__heading {
@@ -967,11 +999,18 @@
     .feedback {
         margin: 0;
         padding: 0;
+        width: 814px;
     }
 
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 814px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 814px;
     }
 
     .members {
@@ -989,6 +1028,11 @@
 @media (max-width: 810px) {
     .services__text {
         font-size: 16px;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .intro__heading {
@@ -1013,11 +1057,18 @@
     .feedback {
         margin: 0;
         padding: 0;
+        width: 810px;
     }
 
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 810px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 810px;
     }
 
     .products__item {
@@ -1043,6 +1094,11 @@
     .intro {
         max-width: 800px;
         word-break: break-all;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .intro__text {
@@ -1114,6 +1170,12 @@
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 800px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 800px;
     }
 
     .feedback__text {
@@ -1141,6 +1203,11 @@
     .intro {
         max-width: 593px;
         word-break: break-all;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .intro__text {
@@ -1179,6 +1246,11 @@
         width: 593px;
     }
 
+    .feedback__input {
+        margin-top: 14px;
+        width: 350px;
+    }
+
     .feedback__text {
         font-size: 16px;
         max-width: 593px;
@@ -1188,6 +1260,7 @@
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 593px;
     }
 }
 
@@ -1199,6 +1272,11 @@
     .intro {
         max-width: 450px;
         word-break: break-all;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .intro__text {
@@ -1223,6 +1301,11 @@
         margin: 0;
         padding: 0;
         width: 450px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 350px;
     }
 
     .services__heading {
@@ -1266,6 +1349,7 @@
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 450px;
     }
 
     .feedback__heading {
@@ -1276,10 +1360,6 @@
         font-size: 16px;
         max-width: 450px;
         word-wrap: break-word;
-    }
-
-    .feedback__input {
-        margin-top: 14px;
     }
 
     .contacts-heading {
@@ -1306,6 +1386,11 @@
     .intro {
         max-width: 415px;
         word-break: break-all;
+    }
+
+    .intro__content {
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .intro__text {
@@ -1355,7 +1440,7 @@
     .feedback {
         margin: 0;
         padding: 0;
-        width: 415px
+        width: 415px;
     }
 
     .feedback__text {
@@ -1367,6 +1452,12 @@
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 415px;
+    }
+
+    .feedback__input {
+        margin-top: 14px;
+        width: 350px;
     }
 
     .feedback__message {
@@ -1429,7 +1520,7 @@
 
 @media (max-width: 350px) {
     .intro {
-        max-width: 350px;
+        width: 350px;
         word-break: break-all;
     }
 
@@ -1445,8 +1536,8 @@
     }
 
     .intro__content {
-        margin-top: -60px;
-        margin-left: 20px;
+        margin: -60px 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     .team {
@@ -1462,7 +1553,7 @@
     .services__heading {
         font-size: 30px;
         margin-top: -30px;
-        margin-left: -20px;
+        margin-left: 0px;
         padding: 0;
     }
 
@@ -1581,6 +1672,7 @@
     .feedback-contacts {
         padding-top: 60px;
         margin: 0;
+        width: 350px;
     }
 
     .contacts-heading {
